@@ -1,0 +1,58 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Custom Addition ###
+# 로그 파일 (애플리케이션 실행 기록)
+*.log
+
+# OS 관련 임시 파일 (WSL/Windows)
+.DS_Store
+Thumbs.db
+*.swp
+
+# 압축 파일
+*.zip
+*.tar.gz
+*.rar
+
+# 로컬 환경 설정 파일
+.env
+.env.local
+
+# 도움말 문서
+# HELP.md

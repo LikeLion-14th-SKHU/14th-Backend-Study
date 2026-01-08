@@ -1,0 +1,39 @@
+package com.asdf.todo.entity;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Todo {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotNull
+    @Column(nullable = false, name = "title")
+    private String title;
+
+    @Column(name = "description")
+    private String description;
+
+    @Column(nullable = false, name = "completed")
+    private boolean completed;
+
+    @Column(
+            nullable = false,
+            name = "created_at",
+            insertable = false,
+            updatable = false,
+            columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+    )
+    private LocalDateTime createdAt;
+}

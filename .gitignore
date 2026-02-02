@@ -28,3 +28,4 @@ replay_pid*
 # Spring Boot config
 application.properties
 application.yml
+application-prod.yml

@@ -1,0 +1,52 @@
+HELP.md
+### [빌드 결과물 및 캐시] ###
+.gradle/
+build/
+out/
+bin/
+!gradle/wrapper/gradle-wrapper.jar
+# 특정 경로의 빌드 결과물 제외 (기존 설정 유지)
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### [IntelliJ IDEA] ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### [VS Code] ###
+.vscode/
+
+### [STS / Eclipse] ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### [NetBeans] ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### [시스템 및 로그] ###
+.DS_Store
+Thumbs.db
+*.log
+HELP.md
+
+### [도커 및 설정] ###
+.docker/
+
+# yml
+application.properties
+application.yml

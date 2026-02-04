@@ -2,8 +2,8 @@ spring:
   application:
     name: minilog-mysql
 
-  profiles:
-    active: prod
+#  profiles:
+#    active: prod
 
   datasource:
     url: ${DB_URL}
@@ -15,6 +15,11 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+  graphql:
+    graphiql:
+      enabled: true
+      path: graphiql
 
 jwt:
   secret: ${JWT_SECRET}
